@@ -16,7 +16,7 @@ module.exports = {
     author: "Egemen Celik",
   },
   plugins: [
-    {
+      {
       resolve:"gatsby-source-contentful",
       options:{
         spaceId:process.env.CONTENTFUL_SPACE_ID,
@@ -24,6 +24,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-image`,
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
